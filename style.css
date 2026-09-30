@@ -1,0 +1,117 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding: 20px;
+        font-family: 'Inter', sans-serif;
+        background-color: #191C24;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        }
+
+    
+    .astronaut img {
+        width:400px;
+    }
+    .login-container {
+        width: 100%;
+        max-width: 340px; /* Um pouco mais de espaço para conforto visual */
+        background-color: #191C24;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 25px;
+        border-radius: 12px; /* Deixa as bordas da caixa arredondadas */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Destaca o card do fundo */
+        gap: 15px; /* Espacia automaticamente os elementos filhos */
+        border:1px solid #00d284;
+    }
+
+    .profile img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        object-fit: cover; /* Garante que a foto não distorça se não for quadrada */
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .login-container input {
+        width: 100%;
+        height: 45px;
+        border-radius: 8px;
+        padding: 0 15px;
+        font-size: 15px;
+        border: 1px solid #2A2E39;
+        background-color: #222632; /* Um tom ligeiramente mais claro que o fundo para dar contraste */
+        color: white;
+    }
+
+    /* Cor do texto do placeholder */
+    .login-container input::placeholder {
+        color: #8A909E;
+    }
+
+    .login-container input:focus {
+        outline: none;
+        border: 2px solid #00D25B;
+    }
+
+    .login-container button {
+        width: 100%;
+        height: 45px;
+        background-color: #00D25B;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer; /* Mostra a mãozinha indicando que é clicável */
+        transition: opacity 0.2s ease;
+    }
+
+    .login-container button:hover {
+        opacity: 0.9;
+    }
+
+    .login-container a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        color: #A0A5B1;
+        transition: color 0.2s ease;
+    }
+
+    .login-container a:hover {
+        color: white; /* Dá um feedback visual ao passar o mouse no link */
+    }
+
+    .login-container a:last-child {
+        color: #00D25B; /* Destaca a criação de conta com a cor principal */
+        font-weight: bold;
+    }
+    @media (max-width:700px) {
+        .content {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
